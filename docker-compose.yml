@@ -3,7 +3,7 @@ services:
   test:
     image: postgres
     ports:
-      - '7777:7777'
+      - '5432:5432'
     volumes:
       - ./data:/var/lib/postgres
     environment:
@@ -11,4 +11,3 @@ services:
       - POSTGRES_DATABASE=app
       - POSTGRES_USER=app
       - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
-      - POSTGRES_HOST_AUTH_METHOD=trust
